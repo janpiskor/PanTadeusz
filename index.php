@@ -12,7 +12,11 @@
 <body>
 
 <header class="container">
-<h1>Pan Tadeusz czyli ostatni zjazd na Litwie. <br>Historia szlachecka z roku 1811 i 1812 we dwunastu księgach wierszem</h1>
+<h1>
+Pan Tadeusz czyli ostatni zjazd na Litwie. <br>Historia szlachecka z roku 1811 i 1812 we dwunastu księgach wierszem</h1>
+
+<center><img src='./pobrane.jpg'</center>
+
 </header>
 
 <div class = "container">
@@ -42,7 +46,7 @@
 	</div>
 </div>
 
-<footer>(c) Jan Piskor </footer>
+<footer>(c) Jan Piskor Uniwersytet Ekonomiczny w Krakowie</footer>
 	
 	
 
