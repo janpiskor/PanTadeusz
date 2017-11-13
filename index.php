@@ -11,14 +11,16 @@
 </head>
 <body>
 
-<header class="container">
-<h1>
-Pan Tadeusz czyli ostatni zjazd na Litwie. <br>Historia szlachecka z roku 1811 i 1812 we dwunastu księgach wierszem</h1>
+<header class="container text-center">
+		<h1>Pan Tadeusz, czyli Ostatni zajazd na Litwie:<br>historia szlachecka z roku 1811 i 1812<br>we dwunastu księgach wierszem</h1>
+	</header>
 
-<center><img src='./pobrane.jpg'</center>
-
-</header>
-
+	<nav class="container navbar navbar-expand-lg navbar-blue bg-danger sticky-top mb-2 rounded">
+		<div class="">
+			<a class="navbar-brand" href="./index.php"> Strona główna</a>
+		</div>
+	</nav>
+	
 <div class = "container">
 	<div class="row">
 		<div class="col-md-3 col-xs-12">
@@ -36,17 +38,19 @@ Pan Tadeusz czyli ostatni zjazd na Litwie. <br>Historia szlachecka z roku 1811 i
 		
 		<div class="col-md-9 col-xs-12">
 		<?php
-			if (!empty($_GET))
-			{
-			$k = $_GET['ksiega'];
-			include_once("./k$k.html");
-			}
+			if (!empty($_GET)) {
+						$k = $_GET['ksiega'];
+			   			include_once("./k$k.html");
+			   			echo "<a href='#' class='btn btn-info btn-lg back-to-top sticky-top float-right' role='button'>UP</a>";
+					} else {
+						echo "<img src='./pobrane.jpg' class='rounded mx-auto d-block border border-info p-2'>";
+					}
 		?>
 		</div>
 	</div>
 </div>
 
-<footer>(c) Jan Piskor Uniwersytet Ekonomiczny w Krakowie</footer>
+<footer style="background:red" class="fixed-bottom">(c) Jan Piskor Uniwersytet Ekonomiczny w Krakowie 2017</footer>
 	
 	
 
