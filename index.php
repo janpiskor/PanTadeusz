@@ -47,7 +47,52 @@
 					}
 		?>
 		</div>
-	</div>
+		
+		
+		
+	<div class="col-md-3 col-sm-12">
+				<div class="card">
+  					<div class="card-header text-center bg-info bg-danger">Notatki
+				  	</div>
+				  	<div class="card-body">
+ 						<h4 class="card-title">Dodaj notatke</h4>
+   						<form action="dodaj.php" method="POST">
+							<div class="form-group">
+  					  			<label for="title">Tytul</label>
+  								<input type="text" class="form-control" id="title" rows="4" name="title"></input>
+  							</div>
+							<div class="form-group">
+  					  		<label for="content">Tresc</label>
+  						  <textarea class="form-control" id="content" rows="4" name="content"></textarea>
+  							</div>
+  						<button type="submit" class="float-left">Wyslij</button>
+					</form>
+ 				 	</div>
+ 				 	<div class="card-body">
+ 				 		<header>Notatki - tabelka</header>
+						<table class="table table-hover table-danger table-responsive bg-danger">
+						  <thead>
+						    <tr>
+						      <th> </th>
+						      <th>Tytul</th>
+						      <th>Tresc</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Example</td>
+						      <td>Content</td>
+						    </tr>
+						  </tbody>
+						</table>
+ 				 	</div>
+ 					<div class="card-footer text-muted">
+ 					</div>
+				</div>
+					
+			</div>	
+		
 </div>
 
 <footer style="background:red" class="fixed-bottom">(c) Jan Piskor Uniwersytet Ekonomiczny w Krakowie 2017</footer>
